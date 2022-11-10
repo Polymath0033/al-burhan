@@ -51,6 +51,10 @@ nav img {
     font-size: 2rem;
 }
 
+.caret:hover .nav {
+    display: grid;
+}
+
 .nav {
     position: fixed;
     top: 0;
