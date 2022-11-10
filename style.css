@@ -9,9 +9,16 @@
     --light: #683503
 }
 
+html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100vw;
+}
+
 body {
     font-family: "Inter";
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 header {
@@ -20,9 +27,10 @@ header {
     z-index: 10;
     position: fixed;
     top: 0;
-    width: 100%;
+    max-width: 100vw;
     display: flex;
     justify-content: space-between;
+    width: 100vw;
 }
 
 nav img {
@@ -43,18 +51,10 @@ nav img {
     font-size: 2rem;
 }
 
-.caret:hover .nav {
-    display: grid;
-}
-
-.button:hover .nav {
-    display: none;
-}
-
 .nav {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     left: 0;
     z-index: 10000;
     height: 300px;
@@ -102,7 +102,7 @@ nav img {
 .hero {
     background-image: url('assets/hero.png');
     height: 600px;
-    width: 100%;
+    max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -182,7 +182,7 @@ article {
     height: 400px;
     padding: 1rem 6rem;
     justify-content: space-evenly;
-    width: 100%;
+    max-width: 100%;
 }
 
 article img {
@@ -221,6 +221,7 @@ span {
 section {
     margin-top: 5rem;
     position: relative;
+    max-width: 100%;
 }
 
 section h2 {
@@ -547,6 +548,29 @@ li a {
 }
 
 @media only screen and (max-width:680px) {
+    article {
+        margin-top: 19rem;
+        margin-bottom: 6rem;
+    }
+    .carousel div {
+        height: 200px;
+    }
+    section {
+        margin-top: 10rem;
+    }
+    .segments {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* margin: 0 auto; */
+    }
+    .segments div {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .input {
+        width: 100%;
+    }
     .hero {
         height: 400px;
     }
@@ -560,6 +584,13 @@ li a {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
+    }
+    footer {
+        margin-top: 10rem;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: 40% 60%;
     }
 }
 
