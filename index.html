@@ -17,8 +17,8 @@
             <img src="assets/image logo.png" alt="Al Burhan" />
         </nav>
         <nav class="caret">
-            <img src="assets/icon.png" alt="sidebar" />
-            <div class="nav">
+            <img src="assets/icon.png" alt="sidebar" onclick="show()" />
+            <div class="nav" id="nav">
                 <div class="home">
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -346,6 +346,9 @@
                 </p>
             </footer>
             <script>
+                function show() {
+                    document.getElementById('nav').style.display = 'grid'
+                }
                 //I am not writing javascript since the  instruction didn't mention tha
                 // function carousel(e, ur) {
                 //     console.log(e.target);
