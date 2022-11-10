@@ -23,7 +23,7 @@
       </nav>
       <nav class="caret">
         <img src="assets/icon.png" alt="sidebar" onclick="show()" />
-        <div class="nav" id="nav">
+        <div class="nav" id="nav" onclick="click()">
           <div class="home">
             <ul>
               <li><a href="#home">Home</a></li>
@@ -379,6 +379,10 @@
     <script>
       function show() {
         document.getElementById("nav").style.display = "grid";
+      }
+
+      function click() {
+        document.getElementById("nav").style.display = "none";
       }
       //I am not writing javascript since the  instruction didn't mention tha
       // function carousel(e, ur) {

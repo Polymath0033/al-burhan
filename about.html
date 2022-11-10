@@ -17,8 +17,8 @@
             <img src="assets/image logo.png" alt="Al Burhan" />
         </nav>
         <nav class="caret">
-            <img src="assets/icon.png" alt="" />
-            <div class="nav">
+            <img src="assets/icon.png" alt="sidebar" onclick="show()" />
+            <div class="nav" id="nav" onclick="click()">
                 <div class="home">
                     <ul>
                         <li><a href="index.html#home">Home</a></li>
@@ -242,6 +242,23 @@
                     @copyright 2022 Al-Burhan Media. All rights Reserved. Terms of service Privacy Policy
                 </p>
             </footer>
+            <script>
+                function show() {
+                    document.getElementById("nav").style.display = "grid";
+                }
+
+                function click() {
+                    document.getElementById("nav").style.display = "none";
+                }
+                //I am not writing javascript since the  instruction didn't mention tha
+                // function carousel(e, ur) {
+                //     console.log(e.target);
+                //     const home = document.getElementById("home");
+                //     home.style.backgroundImage = `url(${url})`;
+
+                //     //console.log(e);
+                // }
+            </script>
 </body>
 
 </html>
