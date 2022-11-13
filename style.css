@@ -552,6 +552,27 @@ li a {
         margin-top: 22rem;
         margin-bottom: 13rem;
     }
+    #news {
+        margin-bottom: 9.7rem;
+    }
+    .carousel span {
+        line-height: 1;
+    }
+    .main {
+        padding: 2rem;
+    }
+    .prayer-times {
+        padding: 1rem;
+        height: 550px;
+    }
+    .solah {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+    .carousel div img {
+        height: 50%;
+    }
     img[alt="ka'abah"] {
         margin: 0 auto;
     }
@@ -622,7 +643,16 @@ li a {
         margin-top: 10rem;
     }
     .nav {
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
+    }
+    .home,
+    .sides {
+        padding: 1rem;
+    }
+    .button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 }
 
